@@ -1,0 +1,6 @@
+1. Start Word document
+2. Enable macros in security setting
+3. press 'Alt'+'F11'
+4. double click on 'this document' with word icon
+5. write the script in the window opened
+6. place the pointer in Sub segment and press F5 to execute code

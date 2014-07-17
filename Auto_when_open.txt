@@ -1,0 +1,12 @@
+'Automate a task when opening an existing document 
+
+Private Sub Document_Open()
+
+
+  'Greet user.
+
+
+  MsgBox "Greetings", vbOKOnly, "Greetings"
+
+
+End Sub

@@ -1,0 +1,12 @@
+' Automate a task when closing an existing document 
+
+Private Sub Document_Close()
+
+
+  'Greet user.
+
+
+  MsgBox "Greetings", vbOKOnly, "Greetings"
+
+
+End Sub
